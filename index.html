@@ -190,7 +190,7 @@
 		</div>
 	</div>
 
-	<!-- <div id="fh5co-couple-story">
+	<div id="fh5co-couple-story">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -242,7 +242,7 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 <!--
 	<div id="fh5co-gallery" class="fh5co-section-gray">
 		<div class="container">
@@ -522,21 +522,23 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+    // var d = new Date('2020-02-08 12:00:00 +0800');//(new Date().getTime() + 200 * 120 * 120 * 2000);
 
     // default example
     simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth(),
-        day: d.getDate() - 10
+        year: 2020,//d.getFullYear(),
+        month: 2,//d.getMonth(),
+        day: 8,//d.getDate()
+        hours: 12+8
     });
 
     //jQuery example
     $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
+        year: 2020,//d.getFullYear(),
+        month: 2,//d.getMonth(),
+        day: 8,//d.getDate(),
+        hours: 12+8,
+        enableUtc: true
     });
 </script>
 
